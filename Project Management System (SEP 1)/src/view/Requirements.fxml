@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RequirementListViewController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Requirements">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+      <VBox alignment="TOP_CENTER" layoutX="37.0" layoutY="130.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#addReq" prefHeight="30.0" prefWidth="149.0" text="Add">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Button>
+            <Label />
+            <Button mnemonicParsing="false" onAction="#modifyReq" prefHeight="47.0" prefWidth="148.0" text="Modify">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Label prefHeight="6.0" prefWidth="150.0" text=" " />
+            <Button mnemonicParsing="false" onAction="#removeReq" prefHeight="39.0" prefWidth="156.0" text="Remove">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Button>
+            <Label prefHeight="6.0" prefWidth="150.0" text=" " />
+            <Button mnemonicParsing="false" onAction="#assignReq" prefHeight="39.0" prefWidth="156.0" text="Assign">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="200.0" layoutY="68.0" prefHeight="434.0" prefWidth="671.0">
+         <children>
+            <TableView fx:id="requirementTable" prefHeight="423.0" prefWidth="590.0">
+              <columns>
+                <TableColumn fx:id="idColumn" prefWidth="40.79998779296875" text="ID" />
+                  <TableColumn fx:id="nameColumn" prefWidth="92.0" text="Name" />
+                  <TableColumn fx:id="deadlineColumn" prefWidth="95.20001220703125" text="Deadline" />
+                <TableColumn fx:id="descColumn" prefWidth="183.19998168945312" text="Desc" />
+                  <TableColumn fx:id="statusColumn" prefWidth="75.0" text="Status" />
+                  <TableColumn fx:id="estTimeColumn" prefWidth="64.79998779296875" text="Est. time" />
+                  <TableColumn fx:id="tasksColumn" prefWidth="53.59991455078125" text="Tasks" />
+                  <TableColumn fx:id="teamColumn" prefWidth="48.0" text="Team" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+      <Label fx:id="errorLabel" layoutX="246.0" layoutY="510.0" prefHeight="36.0" prefWidth="426.0" textFill="RED">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="740.0" layoutY="504.0" mnemonicParsing="false" onAction="#backBtn" prefHeight="84.0" prefWidth="132.0" text="BACK">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

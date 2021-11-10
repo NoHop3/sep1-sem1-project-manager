@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="478.0" prefWidth="635.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.StartWindowController">
+   <children>
+      <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="68.0" prefWidth="600.0" text="Project Management System 1.0v" textFill="#008033">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="191.0" mnemonicParsing="false" onAction="#projectBtn" prefHeight="68.0" prefWidth="115.0" text="Projects" textFill="#00847e">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <Button layoutX="168.0" layoutY="191.0" mnemonicParsing="false" onAction="#reqsBtn" prefHeight="68.0" prefWidth="115.0" text="REQS" textFill="#18aa29">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="321.0" layoutY="191.0" mnemonicParsing="false" onAction="#teamBtn" prefHeight="68.0" prefWidth="115.0" text="TEAM" textFill="#cf20c7">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="464.0" layoutY="191.0" mnemonicParsing="false" onAction="#tasksBtn" prefHeight="68.0" prefWidth="115.0" text="TASKS" textFill="#4816c5">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutY="284.0" prefHeight="68.0" prefWidth="307.0" text="Managed by ColorIT" textFill="#008033">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="310.0" layoutY="284.0" prefHeight="68.0" prefWidth="307.0" text="2020 All Rights Reserved." textFill="#008033">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Button layoutX="495.0" layoutY="368.0" mnemonicParsing="false" onAction="#exitBtn" prefHeight="68.0" prefWidth="115.0" text="EXIT">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Label fx:id="errorLabel" alignment="CENTER" layoutX="156.0" layoutY="94.0" prefHeight="68.0" prefWidth="307.0" text="Error label" textFill="RED">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
